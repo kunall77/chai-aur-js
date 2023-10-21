@@ -61,8 +61,15 @@ let str3 = str1 + srt2;
 let num1, num2, num3;
 num1 = num2 = num3 = 2 + 2;
 
+// ********** increments ************
+
 let gameCounter = 100;
 gameCounter++;
 console.log(gameCounter);
 ++gameCounter;
 console.log(gameCounter);
+
+let x = 3n;
+console.log(++x);
+x = 3n;
+console.log(x++);
