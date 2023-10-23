@@ -46,3 +46,29 @@ const myFunction = function(){
 
 console.log(typeof outsideTemp);
 console.log(typeof bigNumber);
+
+
+// ==================================================
+
+// Memory
+
+// Stack (Primitive Type), Heap (Refrence Type)
+
+let myYoutubeName = "spacehinata";
+let anotherName = myYoutubeName;
+anotherName = "loveworld";
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "kunal@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
