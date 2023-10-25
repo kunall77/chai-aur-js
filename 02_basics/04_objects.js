@@ -18,7 +18,7 @@ const regularUser = {
     }
 }
 
-console.log(regularUser.fullname.userfullname.firstname);
+// console.log(regularUser.fullname.userfullname.firstname);
 
 const obj1 = {1: "a", 2: "b"};
 const obj2 = {3: "a", 4: "b"};
@@ -34,7 +34,7 @@ const obj2 = {3: "a", 4: "b"};
 
 // the best way
 const obj3 = {...obj1, ...obj2};
-console.log(obj3);
+// console.log(obj3);
 
 const users = [
     {
@@ -51,13 +51,45 @@ const users = [
     }
 ]
 
-console.log(users[1].email);
-console.log(tinderUser);
+// console.log(users[1].email);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-// check wheather the given property exsists or not
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
-console.log(tinderUser.hasOwnProperty('isLogged'));
+// // check wheather the given property exsists or not
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLogged'));
+
+
+// Destructuring Object
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseinstructor: "hitesh"
+}
+
+// console.log(course.courseinstructor);
+
+const {courseinstructor: instructor} = course;
+// console.log(courseinstructor);
+console.log(instructor);
+
+// JSON
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+// https://api.github.com/users/hiteshchoudhary
+
+// Json as arrays
+// [
+//     {},
+//     {},
+//     {}
+// ]
+
